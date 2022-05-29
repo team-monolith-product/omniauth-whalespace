@@ -18,7 +18,8 @@ module OmniAuth
       info do
         {
           name: raw_info.dig("name", "fullName"),
-          email: raw_info["primaryEmail"]
+          email: raw_info["primaryEmail"],
+          user_type: raw_info["userType"]
         }
       end
 
